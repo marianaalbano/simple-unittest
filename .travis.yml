@@ -13,9 +13,9 @@ sudo: required
   script:
     - python test.py
 
-- stage: deploy heroku
-  deploy:
-    provider: heroku
-    api-key: 
-      secure: $HEROKU_API_KEY
-    app: simple-unnittest
+#- stage: deploy heroku
+deploy:
+  provider: heroku
+  api-key: 
+    secure: $HEROKU_API_KEY
+  app: simple-unnittest
