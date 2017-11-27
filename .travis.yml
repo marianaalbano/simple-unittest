@@ -5,13 +5,13 @@ python:
 
 sudo: required
 
-- stage: install flask
-  install:
-    - pip install flask
+#- stage: install flask
+install:
+  - pip install flask
 
-- stage: deploy test
-  script:
-    - python test.py
+#- stage: deploy test
+script:
+  - python test.py
 
 #- stage: deploy heroku
 deploy:
