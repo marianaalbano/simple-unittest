@@ -6,12 +6,7 @@ python:
 sudo: required
 
 install:
-  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-  - sudo apt-get update -q
-  - sudo apt-get install gcc-4.8 -y
-  - sudo apt-get install python3-pip
-  - sudo pip3 install flask
-  #- sudo pip3 install flask-unittest
+  - pip install flask
 
 script:
-  - python3 test.py test
+  - python test.py test
