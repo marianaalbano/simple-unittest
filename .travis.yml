@@ -5,8 +5,17 @@ python:
 
 sudo: required
 
-install:
-  - pip install flask
+- stage: install flask
+  install:
+    - pip install flask
 
-script:
-  - python test.py
+- stage: deploy test
+  script:
+    - python test.py
+
+- stage: deploy heroku
+  deploy:
+    provider: heroku
+    api-key: 
+      secure: $HEROKU_API_KEY
+    app: ci-spring-boot
