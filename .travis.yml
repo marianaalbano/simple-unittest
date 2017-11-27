@@ -1,0 +1,9 @@
+language: python
+
+python:
+  - "3.4"
+
+sudo: required
+
+script:
+  - python test.py test
