@@ -14,4 +14,4 @@ install:
   #- sudo pip3 install flask-unittest
 
 script:
-  - python test.py test
+  - python3 test.py test
