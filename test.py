@@ -20,7 +20,7 @@ class Test(unittest.TestCase):
         result = self.app.get('/') 
 
         # verifica o retorno do conteudo da pagina
-        self.assertEqual(result.data.decode(), "mari")
+        self.assertEqual(result.data.decode(), "alissao")
 
 
 if __name__ == "__main__":
